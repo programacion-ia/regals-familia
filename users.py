@@ -36,6 +36,7 @@ def page_users(user_id):
                     if st.button(f"Eliminar regal de {user_name}: {gift[1]}", key=gift[0]):
                         delete_gift(gift[0])  # Delete the gift by ID
                         st.success(f"Regal '{gift[1]}' eliminat amb èxit.")
+                st.markdown("<hr>", unsafe_allow_html=True)
         else:
             st.write(f"{user_name} no té regals assignats.")
 
